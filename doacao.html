@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Doação</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="doacao1.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <div class="topo">
+                        <a href="livraria.html"><img id="logo" src="imagens/logo.png" alt="Sua Livraria"></a>
+                        <form>
+                            <input type="text" placeholder="Procure um livro" class="pesquisa" id="entrada1" onkeyup="redirect(event)">
+                            <i class="fa-solid fa-magnifying-glass icone"></i>
+                        </form>
+                        <a href="doacao.html" id="a-topo"><div id="button-11">Doações</div></a>
+                        <a href="livrosInfantis.html" id="a-topo"><div id="button-22">Livros Infantis</div></a>
+                        <a href="sobreNos.html" id="a-topo"><div id="button-33">Sobre Nós</div></a>
+                    </div>
+                </nav>
+            </header>
+
+            <section>
+                <article>
+                    <div id="fundo">
+                        <div id="form-unic">
+                            <div id="text-form">
+                                <p>CADASTRE SEUS DADOS</p>
+                                <p>PARA REALIZAR UMA</p>
+                                <p>DOAÇÃO!</p>
+                            </div>
+                            <input type="text"  id="inp-1" required placeholder="    Nome">
+                            <br><br>
+                            <input type="email" id="inp-2" required placeholder="    E-mail">
+                            <br><br>
+                            <input type="text" id="inp-3" required placeholder="    Endereço">
+                            <br><br>
+                            <input type="text" id="inp-4" required placeholder="    Nome do Livro">
+                            <span id="doacao-radios"><input type="checkbox">   Eu concordo com os <a href="termos.html" id="termos-form1" target="_blank">termos de uso</a></span>
+                            <span id="erro-form1"></span>
+                            <button id="botao2" onclick="formdoacao()"><pre id="text-bt">T U D O  P R O N T O</pre></button>
+                            <br><br>
+                        </div>
+                        <div>
+                            <img src="imagens/george.png" alt="george.png" id="image-george">
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <footer>
+                <div class="baixo">
+                   <p class="rodape">Sua Livraria, todos os direitos reservados. Copyrights 2023</p>
+                   <p class="rodape">Os preços, condições de pagamento e valores de frete são válidos exclusivamente para as compras efetuadas em nosso site, não valendo, necessariamente, para as nossas lojas físicas</p>
+                   <p class="rodape">Sua Livraria S/A |  Guanambi -BA - Brasil, CEP 46430-000</p>
+                </div>
+            </footer>
+
+        </div>
+        <script>
+            function formdoacao() {
+                var input1Form = document.querySelector("#inp-1").value;
+                var input2Form = document.querySelector("#inp-2").value;
+                var input3Form = document.querySelector("#inp-3").value;
+                var input4Form = document.querySelector("#inp-4").value;
+                var checkboxForm = document.querySelector("#doacao-radios input[type='checkbox']").checked;
+
+                try {
+                    if (input1Form === "" || input2Form === "" || input3Form === "" || input4Form === "") {
+                        throw new Error("Complete todos os campos.");
+                    }
+                    if (!checkboxForm)
+                    {
+                        throw new Error("Aceite os termos de uso.");
+                    }
+                    if (input1Form.length > 50 || input2Form.length > 100 || input3Form.length > 150 || input4Form.length > 50) {
+                        throw new Error("Número de caracteres maior que o limite.");
+                    }
+                } catch (erroform1) {
+                    var mensagemErro = document.createElement("p");
+                    mensagemErro.textContent = erroform1.message;
+                    mensagemErro.style.color = "red";
+
+                    var entradaFormDoac = document.querySelector("#erro-form1");
+                    entradaFormDoac.innerHTML = "";
+                    entradaFormDoac.appendChild(mensagemErro);
+
+                    return;
+                }      
+                window.alert("Seu cadastro foi realizado com sucesso !!!");  
+                window.location.href = 'livraria.html';   
+            }
+        </script>
+    </body>
+</html>
