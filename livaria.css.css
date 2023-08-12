@@ -1,0 +1,384 @@
+html{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+
+.aux{
+    min-height: 100vh;
+    position: relative;
+    margin-bottom: 120px; /* Altura do footer */
+}
+
+/* TOPO */
+.topo{
+    background-color: #FF8D03;
+    height: 120px;
+    width: 1500px;
+    top: 0px;
+    display: flex;
+}
+
+.barra{
+    position: relative;
+    top: 10px;
+}
+
+#logo{
+    width: 110px;
+    height: 110px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    left: 150px;
+    position: relative;
+}
+
+.pesquisa{
+    margin-top: 30px;
+    margin-left: 200px;
+    width: 502px;
+    height: 42px;
+    border-radius: 11.91px;
+    border-width: 0;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #ccc;
+    z-index: 1;
+}
+
+nav::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.topo {
+
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.topo ul {
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+    top: 13px;
+    position: relative;
+}
+
+.topo ul li {
+	list-style: none;
+	float: left;
+	margin: 0 15px;
+}
+
+.topo li a {
+	text-decoration: none;
+	color: white;
+    transition: .5s;
+}
+
+.topo li a:hover {
+	color: #FF8D03;
+    transition: .5s;
+
+}
+
+#a-topo
+{
+    text-decoration: none;
+}
+
+#button-11 {
+    top: 39px;
+    position: relative;
+    width: 102px;
+    height: 47px;
+    background-color: #001011;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 47px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-style: 'Montserrat';
+    transition: .5s;
+}
+#button-11:hover {
+    background-color: #fcfcfc;
+    color: black;
+}
+
+#button-22 {
+    top: 39px;
+    left: 20px;
+    position: relative;
+    width: 102px;
+    height: 47px;
+    background-color: #001011;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 47px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-style: 'Montserrat';
+    transition: .5s;
+}
+#button-22:hover {
+    background-color: #fcfcfc;
+    color: black;
+}
+
+#button-33 {
+    top: 39px;    
+    left: 40px;
+    position: relative;
+    width: 102px;
+    height: 47px;
+    background-color: #001011;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 47px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-style: 'Montserrat';
+    transition: .5s;
+}
+#button-33:hover {
+    background-color: #fcfcfc;
+    color: black;
+}
+
+a{
+    font-size: 11.57px;
+}
+
+.icone{
+    position: relative;
+    left: -40px;
+}
+
+/* RODAPÉ */
+.baixo {
+    /* Remova a posição absoluta do .baixo */
+    background-color: #FF8D03;
+    height: 120px;
+    width: 100%;
+}
+
+
+.rodape{
+    color: white;
+    font-size: 11.57px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer {
+    background-color: #FF8D03;
+    height: 120px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 11.57px;
+    position: relative;
+    clear: both;
+}
+
+/* MEIO */
+
+.primeiro {
+    padding-top: 130px; 
+    text-align: center; 
+}
+
+#japao {
+    max-width: 100%; 
+    height: auto;
+   
+}
+
+.conjunto1 {
+    display: inline-block; 
+    position: relative; 
+}
+
+
+.texto_centro {
+    text-align: left; /* Alinhe o texto à esquerda */
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    top: 50%; /* Centraliza verticalmente na imagem */
+    left: 50px; /* Distância da esquerda da imagem */
+    transform: translateY(-50%); /* Ajusta a posição vertical do texto */
+    color: white; /* Cor do texto */
+    font-size: 40px; /* Tamanho da fonte do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#conteudoa {
+    color: white;
+    font-size: 25px;
+}
+
+.tresMangas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+
+.tresMangas img {
+    max-width: 100%; /* Define a largura máxima das imagens */
+    height: auto; /* Mantém a proporção da altura */
+    margin: 0 40px;
+    width: 130px;
+}
+
+.espada {
+    position: absolute;
+    bottom: 10px; /* Distância em relação ao canto inferior */
+    right: 10px; /* Distância em relação ao canto direito */
+}
+
+#kirito {
+    max-height: 250px; /* Defina o tamanho desejado */
+    width: auto; /* Mantém a proporção da largura */
+   
+}
+
+.segundo {
+    background-color: white;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Espaço entre a primeira seção e a segunda */
+    margin-bottom: -80px;
+    font-size: 30px;
+}
+
+.livrosGeek,
+.sugestoes {
+    background: linear-gradient(to bottom, #E86309, #ffc50a);
+    width: calc(50% - 10px);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Centraliza o texto */
+    height: 300px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sugestoes{
+    background: linear-gradient(to bottom, #ffc50a, #E86309);
+}
+
+.sugestoes {
+    margin-left: 20px;
+}
+
+.livrosGeek {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFF00;
+    padding: 20px;
+}
+
+.conteudoGeek {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%; /* Para garantir que o conteúdo não ultrapasse a largura da div */
+}
+
+
+.imagensGeek {
+    display: flex;
+    align-items: center;
+}
+
+#astro {
+    max-height: 100%;
+    position: relative;
+    top: -30px;
+    left: 20px;
+}
+
+#tresLivros {
+    position: relative;
+    max-width: 100%;
+    margin-top: 10px;
+    top: -30px;
+    left: 75px;
+}
+
+.links{
+    font-size: 25px;
+}
+
+#conteudoLista1{
+    background-color: none;
+    text-decoration: none;
+}
+
+#myCarousel
+{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    width: 200px;
+    height: 200x;
+    right: 120px;
+}
+#l1
+{
+    height: 150px;
+    width: 400px;
+}
+#l2
+{
+    position: relative;
+    left: 50px;
+    width: 100px;
+    height: 150px;
+}
+#l3
+{
+    position: relative;
+    left: 50px;
+    width: 100px;
+    height: 150px;
+}
+#livros-header2
+{
+    position: relative;
+    left: 100px;
+    top: 15px;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="livaria.css.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="aux">
+            <header>
+                <nav>
+                    <div class="topo">
+                        <a href="livraria.html"><img id="logo" src="imagens/logo.png" alt="Sua Livraria"></a>
+                        <form class="barra">
+                            <input type="text" placeholder="Procure um livro" class="pesquisa" id="entrada1" onkeyup="redirect(event)">
+                            <i class="fa-solid fa-magnifying-glass icone"></i>
+                        </form>
+                        <a href="doacao.html" id="a-topo"><div id="button-11">Doações</div></a>
+                        <a href="livrosInfantis.html" id="a-topo"><div id="button-22">Livros Infantis</div></a>
+                        <a href="sobreNos.html" id="a-topo"><div id="button-33">Sobre Nós</div></a>
+                    </div>
+                </nav>
+            </header>
+      
+            <section class="primeiro">
+                <div  class="conjunto1">
+                    <img id="japao" src="imagens/japao.png" alt="Japao de noite">
+                    <div class="texto_centro">
+                        <strong><p>Mangás</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De</p>
+                        <p>Diversos</p>
+                        <p>&nbsp;&nbsp;&nbsp;Tipos</p></strong>
+                    </div>
+                    <div class="tresMangas">
+                        <img id="naruto" src="imagens/naruto.png" alt="Naruto">
+                        <img id="dbz" src="imagens/dbz.png" alt="DragonBall">
+                        <img id="op" src="imagens/onepiece.png" alt="OnePiece">
+                    </div>
+                    <div class="espada">
+                        <img id="kirito" src="imagens/espada.png" alt="Personagem">
+                    </div>
+                </div>
+            </section>
+
+            <section class="segundo">
+                <div class="livrosGeek">
+                  <p id="livros-header2">Alguns Livros</p>
+                    
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                      
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img src="imagens/carrossel1.png" alt="Los Angeles" id="l1">
+                          </div>
+                      
+                          <div class="item">
+                            <img src="imagens/livro1.png" alt="Chicago" id="l2">
+                          </div>
+                      
+                          <div class="item">
+                            <img src="imagens/dbz.png" alt="New York"  id="l3">
+                          </div>
+                        </div>
+                      
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Próximo</span>
+                        </a>
+                      </div>
+                
+                </div>
+                <div class="sugestoes">
+                    <p><strong>SUGESTÕES DE PESQUISA:</strong></p>
+                    <div class="links">
+                        <ul class="listaFinal">
+                            <a href="livros.html" id="conteudoa"><li class="conteudoListaFinal"><u>Mais procurados</u></li></a>
+                            <li class="conteudoListaFinal"><u>Autores conhecidos</u></li>
+                            <li class="conteudoListaFinal"><u>Filosofia contemporânea</u></li>
+                            <li class="conteudoListaFinal"><u>Romances</u></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <footer>
+            <div class="baixo">
+               <p class="rodape">Sua Livraria, todos os direitos reservados. Copyrights 2023</p>
+               <p class="rodape">Os preços, condições de pagamento e valores de frete são válidos exclusivamente para as compras efetuadas em nosso site, não valendo, necessariamente, para as nossas lojas físicas</p>
+               <p class="rodape">Sua Livraria S/A |  Guanambi -BA - Brasil, CEP 46430-000</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="teste.js"></script>
+    </body>
+</html>
