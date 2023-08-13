@@ -1,0 +1,398 @@
+html{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* TOPO */
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.topo{
+    background-color: #FF8D03;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#logo{
+    width: 110px;
+    height: 110px;
+    margin-right: 25px;
+    left: 150px;
+    position: relative;
+}
+
+.pesquisa{
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-left: 200px;
+    width: 502px;
+    height: 42px;
+    border-radius: 11.91px;
+    border-width: 0;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    z-index: 1;
+}
+
+nav::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.topo {
+
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+    margin: 0 auto;
+}
+
+.topo ul {
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+    top: 13px;
+    position: relative;
+}
+
+.topo ul li {
+	list-style: none;
+	float: left;
+	margin: 0 15px;
+}
+
+.topo li a {
+	text-decoration: none;
+	color: white;
+    transition: .5s;
+}
+
+.topo li a:hover {
+	color: #FF8D03;
+    transition: .5s;
+
+}
+
+li {
+    top: 25px;
+    position: relative;
+    width: 102px;
+    height: 47px;
+    background-color: #001011;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 47px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+a{
+    font-size: 11.57px;
+}
+#a-topo
+{
+    text-decoration: none;
+}
+
+#button-11 {
+    top: 18px;
+    position: relative;
+    width: 102px;
+    height: 47px;
+    background-color: #001011;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 47px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-style: 'Montserrat';
+    transition: .5s;
+}
+#button-11:hover {
+    background-color: #fcfcfc;
+    color: black;
+}
+
+#button-22 {
+    top: 18px;
+    left: 20px;
+    position: relative;
+    width: 102px;
+    height: 47px;
+    background-color: #001011;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 47px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-style: 'Montserrat';
+    transition: .5s;
+}
+#button-22:hover {
+    background-color: #fcfcfc;
+    color: black;
+}
+
+#button-33 {
+    top: 18px;    
+    left: 40px;
+    position: relative;
+    width: 102px;
+    height: 47px;
+    background-color: #001011;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 47px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-style: 'Montserrat';
+    transition: .5s;
+}
+#button-33:hover {
+    background-color: #fcfcfc;
+    color: black;
+}
+.fa-solid.fa-magnifying-glass.icone{
+    position: absolute;
+    top: 67px;
+    left: 880px;
+}
+/* RODAPÉ */
+/*Inicio Livro*/
+/*banner da pag*/
+.div2livro{
+    max-width: 1242px;
+    height: 266px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.div2maisvendidos{
+    color: var(--auxiliares-dourado, #E89D09);
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    margin-top: -200px;
+}
+.div2livroCrianças{
+    color: var(--auxiliares-dourado, #E89D09);
+    font-size: 30px;
+    text-align: right;
+    position: relative;
+    margin-top: -200px;
+    margin-right: 10px;
+}
+.Title{
+    color: var(--auxiliares-dourado, #E89D09);
+    font-size: 32px;
+    text-align: right;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -200px;
+    justify-content: center;
+    justify-items: center;
+}
+.div2letra1{
+    color: #000;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: italic;
+    position: relative;
+    padding-top: 50px;
+}
+.div2letra2{
+    color: #000;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: italic;
+    position: relative;
+}
+/*Livros*/
+.div3livro{
+    width: 1234px;
+    height: 918px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.div3livro1{
+    width: 352px;
+    height: 404px;
+    border-radius: 6px;
+    border: 2px solid var(--auxiliares-laranja-vermelho, #FF490A);
+    background: #FFF;
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    margin-top: 30%;
+}
+.div3livro1 img{
+    max-width: 100%;
+    height: 260.73px;
+    margin-top: 12px;
+}
+.div3livro_Title{
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 280px;
+    position: absolute;
+}
+.div3livro_Comprar{
+    width: 150px;
+    height: 46px;
+    margin-top: 350px;
+    border-radius: 10px;
+    border: 2px solid var(--auxiliares-laranja-vermelho, #FF490A);
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.div3livro_Comprar:hover{
+    transform: scale(1.1);
+}
+.div3livro2{
+    width: 352px;
+    height: 404px;
+    border-radius: 6px;
+    border: 2px solid var(--auxiliares-laranja-vermelho, #FF490A);
+    background: #FFF;
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    margin-top: 30%;
+}
+.div3livro2 img{
+    width: 163.473px;
+    height: 260.73px;
+    margin-top: 12px;
+}
+.div3livro3{
+    width: 352px;
+    height: 404px;
+    border-radius: 6px;
+    border: 2px solid var(--auxiliares-laranja-vermelho, #FF490A);
+    background: #FFF;
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    margin-top: 30%;
+}
+.div3livro3 img{
+    width: 163.473px;
+    height: 260.73px;
+    margin-top: 12px;
+}
+.div3livro4{
+    width: 352px;
+    height: 404px;
+    border-radius: 6px;
+    border: 2px solid var(--auxiliares-laranja-vermelho, #FF490A);
+    background: #FFF;
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    margin-top:30%;
+}
+.div3livro4 img{
+    width: 163.473px;
+    height: 260.73px;
+    margin-top: 12px;
+}
+.div3livro5{
+    width: 352px;
+    height: 404px;
+    border-radius: 6px;
+    border: 2px solid var(--auxiliares-laranja-vermelho, #FF490A);
+    background: #FFF;
+    position:relative; 
+    display: flex;
+    justify-content: center; 
+    margin-top:30%;
+}
+.div3livro5_Title{
+    color: #000;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 280px;
+    position: absolute;
+}
+.div3livro5 img{
+    width: 163.473px;
+    height: 260.73px;
+    margin-top: 12px;
+}
+.div3livro6{
+    width: 352px;
+    height: 404px;
+    border-radius: 6px;
+    border: 2px solid var(--auxiliares-laranja-vermelho, #FF490A);
+    background: #FFF;
+    position:relative; 
+    display: flex;
+    justify-content: center; 
+    margin-top:30%;
+}
+.div3livro6 img{
+    width: 163.473px;
+    height: 260.73px;
+    margin-top: 12px;
+}
+.numeros{
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+}
+
+/*Rodapé*/
+.rodape{
+    color: white;
+    font-size: 11.57px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer{
+    background-color: #FF8D03;
+    height: 120px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;    
+    /*Regular rodapé*/  
+    margin-top: 100px;
+}
