@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livros</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="livros.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+  <div class="container-fluid">
+  <!-- Conteúdo do seu site será inserido aqui -->
+
+    <div class="row">
+      <div class="col-sm-12">
+        <header>
+          <nav>
+            <div class="topo">
+              <a href="livraria.html"><img id="logo" src="imagens/logo.png" alt="Sua Livraria"></a>
+              <form>
+                  <input type="text" placeholder="Procure um livro" class="pesquisa" id="entrada1" onkeyup="redirect(event)">
+                  <i class="fa-solid fa-magnifying-glass icone"></i>
+              </form>
+              <a href="doacao.html" id="a-topo"><div id="button-11">Doações</div></a>
+              <a href="livrosInfantis.html" id="a-topo"><div id="button-22">Livros Infantis</div></a>
+              <a href="sobreNos.html" id="a-topo"><div id="button-33">Sobre Nós</div></a>
+          </div>
+        </nav>
+        </header>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <section>
+          <!--<div class="d-flex justify-content-center">  Centraliza div2livro -->
+            <div class="div2livro">
+              <img src="imagens\livroCrianças.png" alt="Livro Crianças">
+              <p class="div2livroCrianças"><strong>Incentivar as crianças a lerem é dar a elas a <br>oportunidade de crescer conhecendo <br>diferentes mundos!</Strong></p> <br><br> <br>
+              <strong class="div2letra1">Aba especial para crianças</strong><br>
+              Resultados da Pesquisa por:  Livros Infantis - Produtos Encontrados: 392
+            </div>
+          <!--</div>-->
+        </section>
+      </div>
+    </div>
+    
+    <!-- Primeira linha de livros -->
+    <div class="row">
+      <div class="col-sm-4 d-flex justify-content-center"> <!-- Centraliza a primeira linha de livros -->
+        <section class="div3livro1">
+          <img src="imagens\livroInf1.png" alt="LivroInf 1">
+          <strong class="div3livro_Title">O Menino Maluquinho <br>$29,90</strong>
+          <button class="div3livro_Comprar">Comprar</button>
+        </section>
+      </div>
+      <div class="col-sm-4 d-flex justify-content-center"> <!-- Centraliza a primeira linha de livros -->
+        <section class="div3livro2">
+          <img src="imagens\livroInf2.png" alt="LivroInf 2">
+          <strong class="div3livro_Title">O Pequeno Príncipe <br>$15,40</strong>
+          <button class="div3livro_Comprar">Comprar</button>
+        </section>
+      </div>
+      <div class="col-sm-4 d-flex justify-content-center"> <!-- Centraliza a primeira linha de livros -->
+        <section class="div3livro3">
+          <img src="imagens\livroInf3.png" alt="LivroInf 3">
+          <strong class="div3livro_Title">Bambi <br>$2,90</strong>
+          <button class="div3livro_Comprar">Comprar</button>
+        </section>
+      </div>
+    </div>
+    
+    <!-- Segunda linha de livros -->
+    <div class="row">
+      <div class="col-sm-4 d-flex justify-content-center"> <!-- Centraliza a segunda linha de livros -->
+        <section class="div3livro4">
+          <img src="imagens\livroInf4.png" alt="LivroInf 4">
+          <strong class="div3livro_Title">O Mistério da Capivara <br>$15,90</strong>
+          <button class="div3livro_Comprar">Comprar</button>
+        </section>
+      </div>
+      <div class="col-sm-4 d-flex justify-content-center"> <!-- Centraliza a segunda linha de livros -->
+        <section class="div3livro5">
+          <img src="imagens\livroInf5.png" alt="LivroInf 5">
+          <strong class="div3livro5_Title">A Ávore Generosa <br>$36,48</strong>
+          <button class="div3livro_Comprar">Comprar</button>
+        </section>
+      </div>
+      <div class="col-sm-4 d-flex justify-content-center"> <!-- Centraliza a segunda linha de livros -->
+        <section class="div3livro6">
+          <img src="imagens\livroInf6.png" alt="Livro 6">
+          <strong class="div3livro5_Title">The Secret Zoo <br>$29,99</strong>
+          <button class="div3livro_Comprar">Comprar</button>
+        </section>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <section>
+          <a class="numeros" href="livrosInfantis.html"><i class="fas fa-chevron-left"></i> 1-2-3-4-5...<i class="fas fa-chevron-right"></i></a>
+        </section>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <footer>
+          <p class="rodape">Sua Livraria, todos os direitos reservados. Copyrights 2023</p>
+          <p class="rodape">Os preços, condições de pagamento e valores de frete são válidos exclusivamente para as compras efetuadas em nosso site, não valendo, necessariamente, para as nossas lojas físicas</p>
+          <p class="rodape">Sua Livraria S/A |  Guanambi -BA - Brasil, CEP 46430-000</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script src="teste.js"></script>
+</body>
+</html>
