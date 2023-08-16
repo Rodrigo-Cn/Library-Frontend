@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sobre Nós</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="livaria.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+        <style>
+            html{
+                font-family: 'Montserrat';
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                margin: 0;
+                padding: 0;
+            }
+
+            .container{
+                max-height: 1030px;
+                position: relative;
+            }
+
+            /* TOPO */
+            .topo{
+                background-color: #FF8D03;
+                height: 120px;
+                width: 1500px;
+                top: 0px;
+                display: flex;
+            }
+
+            #logo{
+                width: 110px;
+                height: 110px;
+                margin-bottom: 25px;
+                margin-left: 25px;
+                left: 150px;
+                position: relative;
+            }
+
+            .pesquisa{
+                margin-top: 30px;
+                margin-left: 200px;
+                width: 502px;
+                height: 42px;
+                border-radius: 11.91px;
+                border-width: 0;
+                padding: 10px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            }
+
+            #a-topo
+            {
+                text-decoration: none;
+            }
+
+            #button-11 {
+                top: 39px;
+                position: relative;
+                width: 102px;
+                height: 47px;
+                background-color: #001011;
+                margin-bottom: 10px;
+                text-align: center;
+                line-height: 47px;
+                border-radius: 7px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                color: white;
+                font-style: 'Montserrat';
+                transition: .5s;
+            }
+            #button-11:hover {
+                background-color: #fcfcfc;
+                color: black;
+            }
+
+            #button-22 {
+                top: 39px;
+                left: 20px;
+                position: relative;
+                width: 102px;
+                height: 47px;
+                background-color: #001011;
+                margin-bottom: 10px;
+                text-align: center;
+                line-height: 47px;
+                border-radius: 7px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                color: white;
+                font-style: 'Montserrat';
+                transition: .5s;
+            }
+            #button-22:hover {
+                background-color: #fcfcfc;
+                color: black;
+            }
+
+            #button-33 {
+                top: 39px;    
+                left: 40px;
+                position: relative;
+                width: 102px;
+                height: 47px;
+                background-color: #001011;
+                margin-bottom: 10px;
+                text-align: center;
+                line-height: 47px;
+                border-radius: 7px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                color: white;
+                font-style: 'Montserrat';
+                transition: .5s;
+            }
+            #button-33:hover {
+                background-color: #fcfcfc;
+                color: black;
+            }
+
+            nav{
+                position: fixed;
+                top: 0;
+                border-bottom: 1px solid #ccc;
+                z-index: 1;
+            }
+
+            nav::after{
+                clear: both;
+                content: "";
+                display: block;
+            }
+
+            .topo {
+
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .topo ul {
+                float: right;
+                height: 100px;
+                line-height: 100px;
+                margin: 0;
+                top: 13px;
+                position: relative;
+            }
+
+            .topo ul li {
+                list-style: none;
+                float: left;
+                margin: 0 15px;
+            }
+
+            .topo li a {
+                text-decoration: none;
+                color: white;
+                transition: .5s;
+            }
+
+            .topo li a:hover {
+                color: #FF8D03;
+                transition: .5s;
+
+            }
+
+            li {
+                top: 25px;
+                position: relative;
+                width: 102px;
+                height: 47px;
+                background-color: #001011;
+                margin-bottom: 10px;
+                text-align: center;
+                line-height: 47px;
+                border-radius: 7px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+            }
+
+            a{
+                font-size: 11.57px;
+            }
+
+            .icone{
+                color: #838181;
+                left: -40px;
+                position: relative;
+                
+            }
+
+            /*MEIO*/
+            #sobreNos{
+                max-width: 100%;
+                height: auto;
+            }
+            .texto {
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: center;
+                font-size: 80px;
+                font-weight: lighter;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                font-family: 'Raleway', sans-serif;
+                letter-spacing: 4px;
+            }
+
+            .texto2{
+                position: absolute;
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: justify;
+                font-weight: lighter;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                font-family: 'Raleway', sans-serif;
+            }
+            .texto3{
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: justify;
+                font-weight: lighter;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                font-family: 'Raleway', sans-serif;
+            }
+            .texto4{
+                position: absolute;
+                top:75%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: justify;
+                font-weight: lighter;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                font-family: 'Raleway', sans-serif;
+            }
+            .card-1
+            {
+                position: absolute;
+                top: 1100px;
+                left: 150px;
+            }
+            .card-2
+            {
+                position: absolute;
+                top: 1100px;
+                left: 550px;
+            }
+            .card-3
+            {
+                position: absolute;
+                top: 1100px;
+                left: 930px;
+            }
+            #text-cofund
+            {
+                position: relative;
+                left: 534px;
+                top: 20px;
+                font-style: 'Montserrat';
+                font-size: 40px;
+            }
+            .card-img-top
+            {
+                width: 100px;
+                height: 100px;
+                border: #001011 2px solid;
+                border-radius: 20px;
+            }
+            /* RODAPÉ */
+            .baixo{
+                background-color: #FF8D03;
+                height: 120px;
+                width: 1380px;
+                position: absolute;
+                bottom: 0px;
+                top: 600px;
+                
+            }
+
+            .rodape{
+                color: white;
+                font-size: 11.57px;
+                text-align: center;
+                padding-top: 10px;
+            }
+            footer{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 100px; /* Defina a altura do footer aqui */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <div class="topo">
+                        <a href="livraria.html"><img id="logo" src="imagens/logo.png" alt="Sua Livraria"></a>
+                        <form>
+                            <input type="text" placeholder="Procure um livro" class="pesquisa" id="entrada1" onkeyup="redirect(event)">
+                            <i class="fa-solid fa-magnifying-glass icone"></i>
+                        </form>
+                        <a href="doacao.html" id="a-topo"><div id="button-11">Doações</div></a>
+                        <a href="livrosInfantis.html" id="a-topo"><div id="button-22">Livros Infantis</div></a>
+                        <a href="sobreNos.html" id="a-topo"><div id="button-33">Sobre Nós</div></a>
+                    </div>
+                </nav>
+            </header>
+
+            <section>
+                <article>
+                    <img src="imagens/sobrenos4.jpg" id="sobreNos" alt="Livro">
+                    <div class="texto">SOBRE NÓS</div>
+                    <div class="texto2"><strong>Quem somos: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong> </div>
+                    <div class="texto3"><strong>Nosso objetivo: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong> </div>
+                    <div class="texto4"><strong>Nossa equipe: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong> </div>
+                </article>
+                <h2 id="text-cofund">Fundadores</h2>
+                <div>
+                    <div class="container-fluid">
+                        <div class="card-1">
+                            <div class="card" style="width: 18rem;">
+                                <img src="imagens/ro.jpg" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title">Rodrigo Costa</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="card-2">
+                            <div class="card" style="width: 18rem;">
+                                <img src="imagens/igu.jpg" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title">Igor Souza</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="card-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="imagens/samuel.jpg" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title">Samuel Araújo</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="baixo">
+                   <p class="rodape">Sua Livraria, todos os direitos reservados. Copyrights 2023</p>
+                   <p class="rodape">Os preços, condições de pagamento e valores de frete são válidos exclusivamente para as compras efetuadas em nosso site, não valendo, necessariamente, para as nossas lojas físicas</p>
+                   <p class="rodape">Sua Livraria S/A |  Guanambi -BA - Brasil, CEP 46430-000</p>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>
